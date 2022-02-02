@@ -1,7 +1,9 @@
 # Truffle Pet Shop Tutorial
 
 This simply follows the [Truffle Suite Pet Shop](https://trufflesuite.com/tutorial/index.html)
-Tutorial. Nothing fancy to see here.
+Tutorial for EVM smart contracts written in Solidity.
+
+Nothing fancy to see here so far.
 
 ## Compilation and testing
 
