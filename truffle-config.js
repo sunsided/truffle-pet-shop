@@ -9,6 +9,13 @@ module.exports = {
     },
     develop: {
       port: 8545
-    }
+    },
+  },
+  // Bring your own compiler
+  // See <https://github.com/trufflesuite/truffle/releases/tag/v5.0.0-beta.0#bring-your-own-compiler>
+  compilers: {
+    solc: {
+      version: "0.8.11",
+    },
   }
 };

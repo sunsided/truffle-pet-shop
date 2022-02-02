@@ -2,6 +2,7 @@
 
 This simply follows the [Truffle Suite Pet Shop](https://trufflesuite.com/tutorial/index.html)
 Tutorial for EVM smart contracts written in Solidity.
+The Solidity compiler was upgraded to 0.8.11 from the default ~0.5.0.
 
 Nothing fancy to see here so far.
 
