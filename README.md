@@ -1,8 +1,18 @@
 # Truffle Pet Shop Tutorial
 
+## Compilation and testing
+
 ```console
 $ truffle compile
 ```
+
+To test, run
+
+```console
+$ truffle test
+```
+
+## Migration
 
 Use [Ganache] to run a local Ethereum blockchain (e.g. via Quickstart),
 then migrate the contract by running
