@@ -53,7 +53,7 @@ App = {
   initContract: function() {
     $.getJSON('Adoption.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with @truffle/contract
-      var AdoptionArtifact = data;
+      const AdoptionArtifact = data;
       App.contracts.Adoption = TruffleContract(AdoptionArtifact);
 
       // Set the provider for our contract
@@ -71,9 +71,23 @@ App = {
   },
 
   markAdopted: function() {
-    /*
-     * Replace me...
-     */
+    var adoptionInstance;
+
+    App.contracts.Adoption.deployed().then(function(instance) {
+      adoptionInstance = instance;
+
+      // Using call() allows us to read data from the blockchain without having to send a full
+      // transaction, meaning we won't have to spend any ether.
+      return adoptionInstance.getAdopters.call();
+    }).then(function(adopters) {
+      for (let i = 0; i < adopters.length; i++) {
+        if (adopters[i] !== '0x0000000000000000000000000000000000000000') {
+          $('.panel-pet').eq(i).find('button').text('Success').attr('disabled', true);
+        }
+      }
+    }).catch(function(err) {
+      console.log(err.message);
+    });
   },
 
   handleAdopt: function(event) {
