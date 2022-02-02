@@ -1,5 +1,8 @@
 # Truffle Pet Shop Tutorial
 
+This simply follows the [Truffle Suite Pet Shop](https://trufflesuite.com/tutorial/index.html)
+Tutorial. Nothing fancy to see here.
+
 ## Compilation and testing
 
 ```console
@@ -90,5 +93,25 @@ Summary
 > Total deployments:   2
 > Final cost:          0.0079154 ETH
 ```
+
+## Running the Website
+
+To start the webserver, run
+
+```console
+$ npm run dev
+```
+
+This should automatically open a browser at [https://localhost:3000](https://localhost:3000). 
+When visiting the page, you will be asked to connect your
+Web3 wallet to the page. You can then interact with the contract.
+
+## Setting up a Web3 wallet with Ganache
+
+In order to use MetaMask, Brave Wallet or similar
+with Ganache, switch to the Localhost environment.
+
+Test wallets can be imported by inspecting the private key
+within Ganache.
 
 [Ganache]: https://trufflesuite.com/ganache
