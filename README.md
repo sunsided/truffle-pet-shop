@@ -11,6 +11,7 @@ Changes from the tutorial:
 ## Interesting reads
 
 - [Is it safe to commit truffle build files to Github (open source)?](https://ethereum.stackexchange.com/questions/66284/is-it-safe-to-commit-truffle-build-files-to-github-open-source)
+- [Solidity and Truffle Continuous Integration Setup with GitHub Actions](https://limcheekin.medium.com/solidity-and-truffle-continuous-integration-setup-with-github-actions-221149eabcca)
 
 ## Compilation and testing
 
