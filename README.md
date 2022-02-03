@@ -3,6 +3,8 @@
 This simply follows the [Truffle Suite Pet Shop](https://trufflesuite.com/tutorial/index.html)
 Tutorial for EVM smart contracts written in Solidity.
 
+![Ganache: Adoption contract after two interactions](docs/ganache-adoption-contract.png)
+
 Changes from the tutorial:
 
 - The Solidity compiler was upgraded to 0.8.11 from the default ~0.5.0.
@@ -33,7 +35,8 @@ Use [Ganache] to run a local Ethereum blockchain (e.g. via Quickstart),
 then migrate the contract by running
 
 ```console
-$ truffle migrate
+# truffle migrate
+$ npm run deploy:migrate
 ```
 
 This should output something like to following:
@@ -117,6 +120,10 @@ $ npm run dev
 This should automatically open a browser at [https://localhost:3000](https://localhost:3000). 
 When visiting the page, you will be asked to connect your
 Web3 wallet to the page. You can then interact with the contract.
+
+Here's an example for an `Adoption` call transaction logged by Ganache. 
+
+![Ganache: Adoption wallet transaction](docs/ganache-transaction.png)
 
 ## Setting up a Web3 wallet with Ganache
 
