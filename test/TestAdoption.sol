@@ -1,4 +1,4 @@
-pragma solidity ^0.5.0;
+pragma solidity ^0.8.11;
 
 // Various assertions to use in our tests.
 // In testing, an assertion checks for things like equality,

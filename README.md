@@ -2,20 +2,28 @@
 
 This simply follows the [Truffle Suite Pet Shop](https://trufflesuite.com/tutorial/index.html)
 Tutorial for EVM smart contracts written in Solidity.
-The Solidity compiler was upgraded to 0.8.11 from the default ~0.5.0.
 
-Nothing fancy to see here so far.
+Changes from the tutorial:
+
+- The Solidity compiler was upgraded to 0.8.11 from the default ~0.5.0.
+- Added a script to extract ABI and bytecode from truffle's build outputs.
+
+## Interesting reads
+
+- [Is it safe to commit truffle build files to Github (open source)?](https://ethereum.stackexchange.com/questions/66284/is-it-safe-to-commit-truffle-build-files-to-github-open-source)
 
 ## Compilation and testing
 
 ```console
-$ truffle compile
+# truffle compile
+$ npm run build
 ```
 
 To test, run
 
 ```console
-$ truffle test
+# truffle test
+$ npm run test
 ```
 
 ## Migration
