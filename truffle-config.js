@@ -17,5 +17,11 @@ module.exports = {
     solc: {
       version: "0.8.11",
     },
+  },
+  mocha: {
+    reporter: 'eth-gas-reporter',
+    reporterOptions: {
+      excludeContracts: ['Migrations']
+    }
   }
 };
