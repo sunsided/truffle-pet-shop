@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "truffle test",
-    "build": "truffle build && npm run extract",
+    "compile": "truffle compile",
+    "build": "npm run compile && npm run extract",
     "deploy:migrate": "truffle migrate",
     "extract": "node scripts/extract_abi_bin.js",
     "dev": "lite-server"

@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 const Adoption = artifacts.require("Adoption");
 
 contract("Adoption", (accounts) => {
